@@ -1,0 +1,58 @@
+//Design a web page and embed various multimedia features in the page.
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aditya Ishant's Profile</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Welcome to Aditya Ishant's Profile Page</h1>
+        </header>
+        
+        <section class="profile">
+            <img src="C:/Users/SONI/Downloads/Firefly 20241101115723.jpg" alt="Profile Photo" class="profile-photo">
+            <h2 class="username">Aditya Ishant</h2>
+            <p class="details">Roll Number: 27427</p>
+            <p class="details">Branch: Computer Science CSIT</p>
+            <p class="details">College: Dronacharya College of Engineering</p>
+        </section>
+        
+        <section class="gallery">
+            <h2>Photo Gallery</h2>
+            <div class="gallery-item">
+                <img src="path-to-your-photo1.jpg" alt="Photo 1" class="gallery-photo">
+                <p class="gallery-description">Photo description 1</p>
+            </div>
+            <div class="gallery-item">
+                <img src="path-to-your-photo2.jpg" alt="Photo 2" class="gallery-photo">
+                <p class="gallery-description">Photo description 2</p>
+            </div>
+        </section>
+        
+        <section class="videos">
+            <h2>Video Gallery</h2>
+            <div class="video-item">
+                <video controls class="gallery-video">
+                    <source src="path-to-your-video1.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <p class="video-description">Video description 1</p>
+            </div>
+            <div class="video-item">
+                <video controls class="gallery-video">
+                    <source src="path-to-your-video2.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <p class="video-description">Video description 2</p>
+            </div>
+        </section>
+    </div>
+</body>
+</html>

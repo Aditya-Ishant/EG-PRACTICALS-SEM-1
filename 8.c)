@@ -1,0 +1,12 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Inline Style Example</title>
+</head>
+<body>
+    <h1 style="color: darkred;">Inline Style</h1>
+    <p style="background-color: yellow; font-size: 20px;">This is an example of using inline styles in HTML.</p>
+</body>
+</html>

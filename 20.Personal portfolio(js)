@@ -1,0 +1,8 @@
+document.addEventListener('DOMContentLoaded', (event) => {
+    const form = document.getElementById('contactForm');
+    form.addEventListener('submit', (e) => {
+        e.preventDefault();
+        alert('Form submitted. Thank you!');
+        form.reset();
+    });
+});

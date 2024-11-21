@@ -1,0 +1,15 @@
+Write a JavaScript program to determine whether a given year is a leap year in the Gregorian calendar.
+
+
+
+function isLeapYearUsingDate(year) {
+let leapDate = new Date(year, 1, 29);
+
+return leapDate.getMonth() === 1 && leapDate.getDate() === 29;
+}
+
+
+let yearToCheck = 2022;
+let result = isLeapYearUsingDate(yearToCheck);
+
+console.log(result ? yearToCheck + " is a leap year." : yearToCheck + " is not a leap year.");

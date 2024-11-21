@@ -1,0 +1,47 @@
+//Create an HTML Program using Lists.
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Names List</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .container {
+            max-width: 600px;
+            margin: auto;
+        }
+        h1 {
+            text-align: center;
+        }
+        ul {
+            list-style-type: square; /* You can change this to disc, circle, etc. */
+            padding: 0;
+        }
+        ul li {
+            padding: 5px;
+            font-size: 1.2em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Friends Names List</h1>
+        <ul>
+            <li>ADITYA</li>
+            <li>NAITIK</li>
+            <li>TAPIS</li>
+            <li>ADARSH</li>
+            <li>NAVNEET</li>
+            <li>PANKAJ</li>
+        </ul>
+    </div>
+</body>
+</html>

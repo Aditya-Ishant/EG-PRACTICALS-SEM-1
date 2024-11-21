@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML Headings Example</title>
+</head>
+<body>
+    <h1>Main Heading (H1)</h1>
+    <p>This is the main heading of the page.</p>
+    
+    <h2>Subheading (H2)</h2>
+    <p>This is a subheading under the main heading.</p>
+    
+    <h3>Sub-subheading (H3)</h3>
+    <p>This is a sub-subheading under the subheading.</p>
+    
+    <h4>Lesser Subheading (H4)</h4>
+    <p>This is a lesser subheading under the sub-subheading.</p>
+    
+    <h5>Even Lesser Subheading (H5)</h5>
+    <p>This is an even lesser subheading under the lesser subheading.</p>
+    
+    <h6>Least Important Subheading (H6)</h6>
+    <p>This is the least important subheading under the even lesser subheading.</p>
+</body>
+</html>

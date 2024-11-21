@@ -1,0 +1,41 @@
+//Write a program to show jQuery Stop Animation (with parameters).
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery Stop Animation Example</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        #box {
+            width: 20vw;
+            height: 40vw;
+            background-color: black;
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+    <h1>jQuery Stop Animation Example</h1>
+    <button id="start">Start Animation</button>
+    <button id="stop">Stop Animation</button>
+    <div id="box"></div>
+
+    <script>
+        $(document).ready(function() {
+            $("#start").click(function() {
+                $("#box").animate({
+                    left: '+=100px'
+                }, 2000);
+            });
+
+            $("#stop").click(function() {
+                $("#box").stop(true, true); 
+            });
+        });
+    </script>
+</body>
+</html>

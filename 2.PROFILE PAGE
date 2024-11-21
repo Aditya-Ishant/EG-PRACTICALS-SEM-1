@@ -1,0 +1,95 @@
+Create your profile page i.e. educational details, hobbies, achievement, my ideals, etc. in HTML.
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2 {
+            text-align: center;
+        }
+        .section {
+            margin-bottom: 20px;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        ul li {
+            padding: 5px;
+            margin-bottom: 5px;
+            background: #eaeaea;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>My Profile Page</h1>
+        
+        <div class="section" id="education">
+            <h2>Educational Details</h2>
+            <ul>
+                <li><strong>High School:</strong> KENDRIYA VIDYALAYA </li>
+                <li><strong>Undergraduate:</strong> BACHELOR OF  TECHNOLOGY  in Computer Science, DRONACHARYA COLLAGE OF ENGNEERING UNDER GURUGRAM UNIVERSITY</li>
+                <li><strong>Postgraduate:</strong> INDIAN INSTITUE OF TECHNOLOGY DELHI  </li>
+            </ul>
+        </div>
+        
+        <div class="section" id="hobbies">
+            <h2>Hobbies</h2>
+            <ul>
+                <li>PLAYING CHESS</li>
+                <li>EXPLORING TECHIE STUFFS AND WEBSITE ON THE INTERNET </li>
+                <li>GETTING KNOWLEADGE ABOUT POLITICS </li>
+                <li>DOING SIDE HUSTLES FOR MAKING MONEY </li>
+            </ul>
+        </div>
+        
+        <div class="section" id="achievements">
+            <h2>Achievements</h2>
+            <ul>
+                <li> WINNER OF "Rashtriya Bal Vaigyanik Pradarshani"</li>
+                <li>Published Research Paper in Data Science Journal</li>
+                <li>Winner of National Coding Competition</li>
+            </ul>
+        </div>
+        
+        <div class="section" id="ideals">
+            <h2>My Ideals</h2>
+            <ul>
+                <li>Integrity and Honesty</li>
+                <li>Lifelong Learning and Curiosity</li>
+                <li>Compassion and Empathy</li>
+                <li>Commitment to Excellence</li>
+            </ul>
+        </div>
+        
+        <div class="section" id="PERSON I ADMIRE ">
+            <h2>PERSON I ADMIRE THE MOST </h2>
+            <ul>
+                <li>Vinayak Damodar Savarkar</li>
+                <li>Subhas Chandra Bose</li>
+                <li>Bhagat Singh</li>
+                <li>Chhatrapati Shivaji Maharaj</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
+

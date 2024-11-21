@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Text Formatting Example</title>
+</head>
+<body>
+    <h1>Text Formatting Examples</h1>
+    <p><b>This text is bold.</b></p>
+    <p><i>This text is italic.</i></p>
+    <p><u>This text is underlined.</u></p>
+    <p><s>This text is struck through.</s></p>
+    <p>This is <sup>superscript</sup> and <sub>subscript</sub> text.</p>
+    <p>This is a paragraph with a line break.<br>Here is the new line.</p>
+    <p>This is above the horizontal line.</p>
+    <hr>
+    <p>This is below the horizontal line.</p>
+</body>
+</html>
+

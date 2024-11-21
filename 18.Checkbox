@@ -1,0 +1,49 @@
+// Write a program to show how to retrieve checkbox value using jQuery.
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retrieve Checkbox Values</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <h1>Select Your Favorite Games</h1>
+    <form id="gamesForm">
+        <label><input type="checkbox" name="game" value="GTA 5"> GTA 5</label><br>
+        <label><input type="checkbox" name="game" value="RDR2"> RDR2</label><br>
+        <label><input type="checkbox" name="game" value="Among Us"> Among Us</label><br>
+        <label><input type="checkbox" name="game" value="FC 24"> FC 24</label><br>
+        <label><input type="checkbox" name="game" value="Elden Ring"> Elden Ring</label><br>
+        <label><input type="checkbox" name="game" value="Ghost of Tsushima"> Ghost of Tsushima</label><br>
+        <label><input type="checkbox" name="game" value="Dark Souls Trilogy"> Dark Souls Trilogy</label><br>
+        <label><input type="checkbox" name="game" value="Watch Dogs Series"> Watch Dogs Series</label><br>
+        <label><input type="checkbox" name="game" value="Far Cry Series"> Far Cry Series</label><br>
+        <label><input type="checkbox" name="game" value="Valorant"> Valorant</label><br>
+        <label><input type="checkbox" name="game" value="Apex Legends"> Apex Legends</label><br>
+        <label><input type="checkbox" name="game" value="Call of Duty"> Call of Duty</label><br>
+        <label><input type="checkbox" name="game" value="Counter Strike"> Counter Strike</label><br>
+        <label><input type="checkbox" name="game" value="Palworld"> Palworld</label><br>
+        <label><input type="checkbox" name="game" value="Forza Horizon"> Forza Horizon</label><br>
+        <button type="button" id="getValues">Get Selected Games</button>
+    </form>
+    <div id="output" style="margin-top: 20px; font-weight: bold;"></div>
+    <script>
+        $(document).ready(function() {
+            $('#getValues').click(function() {
+                let selectedGames = [];
+                $('input[name="game"]:checked').each(function() {
+                    selectedGames.push($(this).val());
+                });
+                if (selectedGames.length > 0) {
+                    $('#output').html('Selected games: ' + selectedGames.join(', '));
+                } else {
+                    $('#output').html('No games selected.');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
