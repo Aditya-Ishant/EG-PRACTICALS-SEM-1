@@ -1,6 +1,8 @@
 //Write a JavaScript program to convert temperatures to and from celsius, Fahrenheit.
 
 
+JS ----
+
 
 function convertToCelsius() {
     let fahrenheitInput = document.getElementById("fahrenheit").value.trim();
@@ -27,3 +29,99 @@ function convertToFahrenheit() {
     let fahrenheit = (celsius * 9 / 5) + 32;
     document.getElementById("fahrenheit").value = fahrenheit.toFixed(2);
 }
+
+
+
+HTML- 
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+        h1 {
+            color: #333;
+        }
+        .converter {
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        input {
+            margin: 10px;
+            padding: 8px;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+        }
+        button {
+            padding: 8px 16px;
+            border: none;
+            border-radius: 4px;
+            background-color: #4CAF50;
+            color: white;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <h1>Temperature Converter</h1>
+    <div class="converter">
+        <div>
+            <label for="fahrenheit">Fahrenheit: </label>
+            <input type="text" id="fahrenheit">
+        </div>
+        <div>
+            <label for="celsius">Celsius: </label>
+            <input type="text" id="celsius">
+        </div>
+        <div>
+            <button onclick="convertToCelsius()">Convert to Celsius</button>
+            <button onclick="convertToFahrenheit()">Convert to Fahrenheit</button>
+        </div>
+    </div>
+
+    <script>
+        function convertToCelsius() {
+            let fahrenheitInput = document.getElementById("fahrenheit").value.trim();
+            let fahrenheit = parseFloat(fahrenheitInput);
+
+            if (isNaN(fahrenheit)) {
+                alert("Please enter a valid Fahrenheit temperature.");
+                return;
+            }
+
+            let celsius = (fahrenheit - 32) * 5 / 9;
+            document.getElementById("celsius").value = celsius.toFixed(2);
+        }
+
+        function convertToFahrenheit() {
+            let celsiusInput = document.getElementById("celsius").value.trim();
+            let celsius = parseFloat(celsiusInput);
+
+            if (isNaN(celsius)) {
+                alert("Please enter a valid Celsius temperature.");
+                return;
+            }
+
+            let fahrenheit = (celsius * 9 / 5) + 32;
+            document.getElementById("fahrenheit").value = fahrenheit.toFixed(2);
+        }
+    </script>
+</body>
+</html>
