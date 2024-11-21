@@ -38,3 +38,56 @@ button {
 button:hover {
     background-color: #218838;
 }
+
+
+HTML-
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2D Transformation Demonstration</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>2D Transformation Demonstration</h1>
+        <div class="box" id="box"></div>
+        <div class="controls">
+            <button onclick="translateBox()">Translate</button>
+            <button onclick="rotateBox()">Rotate</button>
+            <button onclick="scaleBox()">Scale</button>
+            <button onclick="resetBox()">Reset</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+JS-
+
+
+let box = document.getElementById('box');
+
+function translateBox() {
+    box.style.transform = 'translateX(100px)';
+}
+
+function rotateBox() {
+    box.style.transform = 'rotate(45deg)';
+}
+
+function scaleBox() {
+    box.style.transform = 'scale(1.5)';
+}
+
+function resetBox() {
+    box.style.transform = 'none';
+}
+
+
+
